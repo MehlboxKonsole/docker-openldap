@@ -2,10 +2,9 @@ docker-openldap
 ===============
 
 A Docker image running OpenLDAP on Debian stable ("jessie" at the moment). The
-Dockerfile is inspired by
-[cnry/openldap](https://registry.hub.docker.com/u/cnry/openldap/), but as said
-before, running a stable Debian and be a little less verbose, but more complete
-in the configuration.
+Dockerfile is based on 
+[dinkel/docker-openldap](https://hub.docker.com/r/dinkel/openldap/). Additionally 
+to the already nicely working version it has the qmail module available.
 
 NOTE: On purpose, there is no secured channel (TLS/SSL), because I believe that
 this service should never be exposed to the internet, but only be used directly
